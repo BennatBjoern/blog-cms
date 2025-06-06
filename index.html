@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini-Blog CMS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mini-Blog / Portfolio CMS</h1>
+
+    <form id="post-form">
+      <input id="post-title" type="text" placeholder="Titel" required />
+      <input id="post-tag" type="text" placeholder="Tag/Kategorie" />
+      <textarea id="post-content" placeholder="Inhalt" required></textarea>
+      <button type="submit">Beitrag speichern</button>
+    </form>
+
+    <input id="search" type="text" placeholder="Suchen..." />
+
+    <ul id="post-list"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
