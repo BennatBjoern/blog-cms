@@ -98,12 +98,53 @@ form button:hover {
   margin: 2rem auto;
 }
 
+.post-card {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 18px rgba(34, 43, 69, 0.13);
+}
+
+.post-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.35rem;
+  color: var(--color-primary);
+}
+
+.post-tag {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  padding: 0.1em 0.7em;
+  margin-bottom: 0.6em;
+  margin-right: 0.5em;
+  letter-spacing: 0.5px;
+}
+
+.post-content {
+  margin: 0.7rem 0;
+  line-height: 1.6;
+}
+
 @media (max-width: 700px) {
   form,
   #post-list,
+  .post-card,
   #search {
     max-width: 97vw;
     font-size: 1rem;
+  }
+  .post-card {
+    padding: 1rem;
   }
   form {
     padding: 1rem;
