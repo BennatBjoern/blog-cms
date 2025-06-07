@@ -34,10 +34,19 @@ form.addEventListener("submit", function (e) {
   p.classList.add("post-content");
   p.textContent = content;
 
+  // Add an event listener to the button to remove the post when clicked
+  const deleteButton = document.createElement("button");
+  deleteButton.classList.add("delete-btn");
+  deleteButton.textContent = "Löschen";
+  deleteButton.addEventListener("click", function () {
+    postList.removeChild(li);
+  });
+
   // Build the list item
   li.appendChild(h2);
   if (tagEl) li.appendChild(tagEl);
   li.appendChild(p);
+  li.appendChild(deleteButton);
 
   // Place the new post at the top of the list
   postList.prepend(li);

@@ -135,6 +135,26 @@ form button:hover {
   line-height: 1.6;
 }
 
+.delete-btn {
+  background: #ffe3e3;
+  color: #c92a2a;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3em 0.8em;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.delete-btn:hover,
+.delete-btn:focus {
+  background: #c92a2a;
+  color: #fff;
+  outline: none;
+}
+
 @media (max-width: 700px) {
   form,
   #post-list,
