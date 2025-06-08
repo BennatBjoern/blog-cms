@@ -27,7 +27,6 @@ Dieses Mini-CMS ist ein eigenständiges Übungsprojekt mit Fokus auf moderne Web
 - Beiträge filtern nach Kategorie/Tag
 - Responsive Design für mobile Geräte
 - Export-/Import-Funktion für Beiträge (JSON)
-- (Optional) Deployment als Portfolio auf GitHub Pages
 
 ## Motivation
 
