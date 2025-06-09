@@ -62,7 +62,7 @@ form textarea:focus {
   outline: none;
 }
 
-form button {
+#submit-btn {
   background: var(--color-primary);
   color: #fff;
   border: none;
@@ -75,7 +75,7 @@ form button {
   align-self: flex-end;
 }
 
-form button:hover {
+#submit-btn:hover {
   background: var(--color-primary-dark);
 }
 
@@ -151,6 +151,26 @@ form button:hover {
 .delete-btn:hover,
 .delete-btn:focus {
   background: #c92a2a;
+  color: #fff;
+  outline: none;
+}
+
+.edit-btn {
+  background: #e7f5ff;
+  color: #1971c2;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3em 0.8em;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.edit-btn:hover,
+.edit-btn:focus {
+  background: #1971c2;
   color: #fff;
   outline: none;
 }
