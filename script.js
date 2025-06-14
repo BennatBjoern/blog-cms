@@ -100,6 +100,14 @@ form.addEventListener("submit", function (e) {
   const content = postContent.value.trim();
   let posts = loadPostsFromLocalStorage();
 
+  if (!title) {
+    const errorMessage = document.createElement("p");
+    errorMessage.textContent = "Bitte gib einen Titel ein.";
+    errorMessage.style.color = "red";
+    postTitle.parentNode.insertBefore(errorMessage, postTitle.nextSibling);
+    return; // Stop further execution if title is empty
+  }
+
   // Check if we are currently editing a post
   if (currentlyEditing !== null) {
     // Update the existing post
@@ -117,4 +125,13 @@ form.addEventListener("submit", function (e) {
   renderPosts();
   // Reset the form fields
   form.reset();
+
+  // Remove any error messages
+  const errorMessage = postTitle.nextElementSibling;
+  if (errorMessage && errorMessage.tagName === "P") {
+    errorMessage.remove();
+  }
+
+  // Focus back on the title input
+  postTitle.focus();
 });
